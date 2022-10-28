@@ -1,0 +1,66 @@
+<!-- ------------------------ -->
+<!-- ADD the code for Add form HERE -->
+<!-- ------------------------ -->
+<% include ../partials/header.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="employeeIdTextField">Employee ID</label>
+                    <input type="text" class="form-control"
+                    id="employeeIdTextField"
+                    placeholder="Enter the Employee ID"
+                    name="Employeeid" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nameTextField">Employee Name</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Employee's Name"
+                    name="Employeename" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="departmentTextField">Department</label>
+                    <input type="text" class="form-control"
+                    id="departmentTextField"
+                    placeholder="Enter the Department"
+                    name="Department" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="designationTextArea">Designation</label>
+                    <textarea type="text" class="form-control"
+                    id="designationTextArea"
+                    placeholder="Enter the Employee's Designation"
+                    name="Designation" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Salary</label>
+                    <input type="text" class="form-control"
+                    id="salaryField"
+                    placeholder="Enter the Employee's Salary"
+                    name="Salary" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit
+                </button>
+                
+                <a href="/employees" class="btn btn-warning">
+                <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>
+

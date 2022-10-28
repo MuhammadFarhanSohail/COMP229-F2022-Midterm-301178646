@@ -1,0 +1,18 @@
+/* Custom CSS goes here */
+body {
+  padding-bottom: 70px;
+  font-size: large;
+  background-color: blanchedalmond;
+  background-image: linear-gradient(to bottom white, blanchedalmond);
+  
+  }
+  .test{
+    text-align: center;
+  }
+  span{
+    text-align: center;
+  }
+  h2{
+    color:blue;
+  }
+
